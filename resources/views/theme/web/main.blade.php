@@ -1,0 +1,10 @@
+<html>
+    @include('theme.web.head')
+    @yield('css')
+    <body>
+        @include('theme.web.aside')
+         {{$slot}}
+      @include('theme.web.js')
+      @yield('footer')
+    </body>
+</html>
